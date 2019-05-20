@@ -16,6 +16,14 @@ None.
 
 ## Example Playbook
 
+Clone the project to a directory named `bbr`:
+
+```shell
+git clone git@github.com:devops-templates/ansible-roles-bbr.git bbr
+```
+
+Move `hosts.example` and `bbr.yml` to the same parent directory of `bbr`:
+
 ```yaml
 ---
 - hosts: all
