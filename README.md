@@ -20,6 +20,7 @@ None.
 ---
 - hosts: all
   remote_user: sysops
+  become: yes
   # remote_user: user
   # become: yes
   # become_method: sudo
@@ -31,6 +32,12 @@ Then run the playbook, like this:
 
 ```shell
 ansible-playbook -i hosts bbr.yml
+```
+
+If use a SSH Key with custom name, run the playbook like this:
+
+```shell
+ansible-playbook -i hosts bbr.yml  --become --key-file ~/.ssh/vps-ssh-key
 ```
 
 ## License
